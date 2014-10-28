@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:gravity="center_vertical">
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView
+			            android:id="@+id/locationView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textSize="25sp"
+			            android:text="Current Location: " />
+                    
+                    <TextView
+			            android:id="@+id/locationText"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textSize="25sp" />
+                    
+                </TableRow>
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="#80000000" />
+                
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView
+			            android:id="@+id/scoreView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textSize="25sp"
+			            android:text="Score:" />
+                    <TextView
+			            android:id="@+id/scoreText"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textSize="25sp" />
+                    
+                </TableRow>
+
+		</TableLayout>
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#33B5E5" />
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+
+	    <TableLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:gravity="center_vertical">
+	
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:gravity="center_vertical">
+	        
+		        <TextView
+		            android:id="@+id/requestView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:text="Request:" />
+		
+		        <Spinner
+		            android:id="@+id/requestSpinner"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		
+		        <Button
+		            android:id="@+id/submitWalk"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Walk" />
+	        </TableRow>
+	        
+	        
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:id="@+id/moveToView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:text="Move To:" />
+		
+		        <Spinner
+		            android:id="@+id/moveSpinner"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		
+		        <Button
+		            android:id="@+id/submitMove"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Move" />
+	        
+	        </TableRow>
+	
+	
+	    </TableLayout>
+	</LinearLayout>
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#33B5E5" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/distancesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Logs:" />
+        
+        <TextView
+            android:id="@+id/distancesTextMultiline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars = "vertical"
+            android:textSize="20sp" >
+
+    	</TextView>
+    	
+    </LinearLayout>
+
+</LinearLayout>
